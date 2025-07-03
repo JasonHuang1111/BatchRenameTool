@@ -111,7 +111,7 @@ public class BatchRenameGameObjects : EditorWindow
     {
         string name = t_name.Trim(); //去除头尾空白字符串
         int index = t_index;
-        if ((name + index) != string.Empty) //若名字不为空
+        if (!string.IsNullOrEmpty(name)) //若名字不为空
         {
             bool isAssetsObject = false; //flag, 是否是assets文件夹的资源
 
